@@ -1,0 +1,29 @@
+package Inheritance;
+
+//accessing private data members using inheritance
+
+class Base {
+    private int x = 10;
+
+    public int getX() {
+        return x;
+    }
+}
+
+class Derived extends Base{
+        int y = 20;
+
+        void print()
+        {
+            System.out.println(getX());
+            System.out.println(y);
+        }
+}
+
+public class Inheritance1 {
+        public static void main(String[] args){
+            Derived d = new Derived();
+            d.print();
+        }
+}
+
