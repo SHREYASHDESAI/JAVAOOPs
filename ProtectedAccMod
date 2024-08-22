@@ -1,0 +1,8 @@
+import package2.*;
+
+class ProtectedAccMod extends AA {
+    public static void main(String[] args){
+        ProtectedAccMod t = new ProtectedAccMod();
+        t.fun();
+    }
+}
