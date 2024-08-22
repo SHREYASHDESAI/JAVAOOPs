@@ -1,0 +1,14 @@
+package FinalKeyword;
+
+import java.io.*;
+
+class FinalLocalVar {
+    public static void main (String[] args) {
+
+        final int x;
+        x = 100; //can be initialized ony once
+        System.out.println(x);
+
+        //x = 200; //not allowed x is initialized with final keyword
+    }
+}
