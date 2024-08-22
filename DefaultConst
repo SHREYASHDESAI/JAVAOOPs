@@ -1,0 +1,28 @@
+package Constructors;
+
+import java.io.*;
+
+
+class Point
+{
+    int x, y;
+
+    void print()
+    {
+        System.out.println("x = " + x + ", y = "+y);
+    }
+}
+public class DefaultConst
+{
+    public static void main(String[] args)throws IOException
+    {
+
+        Point p = new Point();
+        p.print();
+
+    }
+}
+
+
+
+
