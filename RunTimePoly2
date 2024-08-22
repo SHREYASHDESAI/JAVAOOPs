@@ -1,0 +1,33 @@
+package Polymorphism;
+
+/*Overriding works with multilevel inheritance too*/
+
+class Parent{
+    void fun(){
+        System.out.println("Parent fun");
+    }
+}
+
+class Child extends Parent{
+    @Override
+    void fun(){
+        System.out.println("Child fun");
+    }
+}
+
+class GrandChild extends Child{
+    @Override
+    void fun(){
+        System.out.println("GrandChild fun");
+    }
+}
+
+public class RunTimePoly2 {
+    public static void main(String[] args){
+        Parent p1 = new Child();
+        Parent p2 = new GrandChild();
+
+        p1.fun();
+        p2.fun();
+    }
+}
