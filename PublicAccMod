@@ -1,0 +1,8 @@
+import package3.*;
+
+class PublicAccMod {
+    public static void main(String[] args){
+        AA t = new AA();
+        t.func();
+    }
+}
