@@ -1,0 +1,14 @@
+package FinalKeyword;
+
+class FinalReferenceVar  {
+
+
+    public static void main (String[] args) {
+
+        final StringBuffer sb = new StringBuffer("Geeks");
+
+        sb.append("forGeeks");
+
+        System.out.println(sb);
+    }
+}
