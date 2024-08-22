@@ -1,0 +1,8 @@
+import package1.*;
+
+public class DefaultAccMod {
+    public static void main(String[] args){
+        AA t = new AA();
+       // t.fun(); //gives error because in package1 access is default
+    }
+}
