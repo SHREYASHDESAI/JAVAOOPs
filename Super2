@@ -1,0 +1,25 @@
+package SuperKeyword;
+
+//using super() to avoid ambiguity when we have same names
+
+class Base1{
+    int x = 10;
+    int y = 5;
+}
+
+class Derived1 extends Base1{
+    int x = 20;
+    int y = 15;
+    void print(){
+        System.out.println(super.x); //super is used to so that x in parents class is printed
+        System.out.println(x);
+        System.out.println(y); //this will print y in this class not the parent class
+    }
+}
+
+public class Super2 {
+    public static void main(String[] args){
+        Derived1 d = new Derived1();
+        d.print();
+    }
+}
