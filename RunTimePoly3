@@ -1,0 +1,29 @@
+package Polymorphism;
+
+/*Static Methods are not overridden*/
+
+class Parent1{
+    static void fun(){
+        System.out.println("Parent fun");
+    }
+}
+
+class Child1 extends Parent1{
+    static void fun(){
+        System.out.println("Child fun");
+    }
+}
+
+
+public class RunTimePoly3{
+    public static void main(String[] args){
+        Parent1 p1 = new Child1();
+
+        p1.fun();
+
+    }
+}
+
+
+
+
