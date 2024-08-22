@@ -1,0 +1,13 @@
+package FinalKeyword;
+
+class Base{
+    final void func(){
+        System.out.println("Finalized Statement");
+    }
+}
+
+public class FinalMethod extends Base {
+    /*void func(){
+        System.out.println("Derived Class");
+    }*/ //overriding is denied
+}
