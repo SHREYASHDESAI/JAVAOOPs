@@ -1,0 +1,39 @@
+package ThisKeyword;
+
+/*using this keyword to access the Point class variables inside Point constructor*/
+
+import java.math.*;
+import java.io.*;
+import java.util.*;
+
+class Point
+{
+    int x, y;
+
+    Point(int x, int y) //constructor
+    {
+        this.x = x;  //this.x refers to int x;
+        this.y = y;  //this.y refers to int y;
+    }
+
+    void print()
+    {
+        System.out.println(x+" "+y);
+    }
+}
+public class This1
+{
+    public static void main(String[] args)throws IOException
+    {
+
+        Point p1 = new Point(10, 20);
+
+        Point p2 = new Point(5, 15);
+
+        p1.print();
+        p2.print();
+
+    }
+}
+
+
