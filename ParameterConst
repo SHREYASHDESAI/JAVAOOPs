@@ -1,0 +1,30 @@
+package Constructors;
+
+import java.io.*;
+
+class Point1
+{
+    int x, y;
+
+    Point1(int a, int b)
+    {
+        x = a;
+        y = b;
+    }
+
+    void print()
+    {
+        System.out.println("x = " + x + ", y = "+y);
+    }
+}
+public class ParameterConst
+{
+    public static void main(String[] args)throws IOException
+    {
+
+        Point1 p = new Point1(10, 20);
+        p.print();
+
+    }
+}
+
