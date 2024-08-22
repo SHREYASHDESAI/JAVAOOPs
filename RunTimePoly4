@@ -1,0 +1,30 @@
+package Polymorphism;
+
+/*We can call parents func using super*/
+
+class Parent2{
+    void fun(){
+        System.out.println("Parent fun");
+    }
+}
+
+class Child2 extends Parent2{
+    void fun(){
+        super.fun();
+        System.out.println("Child fun");
+    }
+}
+
+
+public class RunTimePoly4{
+    public static void main(String[] args){
+        Parent2 p1 = new Child2();
+
+        p1.fun();
+
+    }
+}
+
+
+
+
