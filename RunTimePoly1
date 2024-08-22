@@ -1,0 +1,21 @@
+package Polymorphism;
+
+class Base{
+    void fun(){
+        System.out.println("Base's fun");
+    }
+}
+
+class Derived extends Base{
+    @Override //they are annotations,they are not processed but are necessary for analysis of code
+    void fun(){
+        System.out.println("Derived fun");
+    }
+}
+public class RunTimePoly1 {
+    public static void main(String[] args){
+        Base b = new Derived();
+        b.fun(); //even though reference is of type Base since this reference is referencing
+                 //to derived class object we get output from derived class method
+    }
+}
