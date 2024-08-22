@@ -1,0 +1,55 @@
+package ThisKeyword;
+/*chaining of functions*/
+
+import java.math.*;
+import java.io.*;
+import java.util.*;
+
+class Point1
+{
+    int x, y;
+
+    Point1(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+
+    Point1 setX(int x)
+    {
+        this.x = x;
+
+        return this;
+    }
+
+    Point1 setY(int y)
+    {
+        this.y = y;
+
+        return this;
+    }
+
+    void print()
+    {
+        System.out.println(x+" "+y);
+    }
+}
+public class This2
+{
+    public static void main(String[] args)throws IOException
+    {
+
+        Point1 p1 = new Point1(10, 20);
+
+        Point1 p2 = new Point1(5, 15);
+
+        p1.setX(2).setY(3); //functions are chained
+
+        p1.print();
+        p2.print();
+
+
+    }
+}
+
+
