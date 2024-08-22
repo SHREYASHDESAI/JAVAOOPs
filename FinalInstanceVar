@@ -1,0 +1,15 @@
+package FinalKeyword;
+
+import java.io.*;
+
+class FinalInstanceVar{
+
+    final int x = 100; //three ways of initializing in notebook
+
+    public static void main (String[] args) {
+
+        FinalInstanceVar t =  new FinalInstanceVar();
+
+        System.out.println(t.x);
+    }
+}
