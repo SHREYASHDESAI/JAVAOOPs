@@ -1,0 +1,33 @@
+package SuperKeyword;
+
+//use super() to call parent class's constructor
+
+class Base{
+    int x;
+    Base(){
+        x = 0;
+    }
+    Base(int i){
+        x = i;
+    }
+}
+class Derived extends Base{
+     int y;
+     Derived(){
+         super(); //no need to use super here as it is not required
+         y = 0;
+     }
+     Derived(int i,int j){
+         super(i); //if here the super() is not used x will get value 0
+                   //as set in default constructor
+         y = j;
+     }
+}
+
+public class Super1 {
+    public static void main(String[] args){
+        Derived d = new Derived(10,20);
+        System.out.println(d.x);
+        System.out.println(d.y);
+    }
+}
