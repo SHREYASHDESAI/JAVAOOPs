@@ -1,0 +1,19 @@
+package FinalKeyword;
+
+/*Static Final variables means its created and is used for all objects of
+* the class. And this variable can be accessed without even creating an object */
+
+//Static final variables are written in capitalized
+
+class StaticFinalVar {
+
+    static final int MAX = 100;
+/*Other way it can be initialized as:-
+*  static final int MAX;
+* static {MAX = 100;} //this is called static block */
+
+    public static void main (String[] args) {
+
+        System.out.println(MAX);
+    }
+}
