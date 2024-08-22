@@ -1,0 +1,14 @@
+class A{
+    private int x;
+    int getX(){
+        x = 4;
+        return x;
+    }
+}
+class PrivateAccMod {
+    public static void main(String[] args){
+        A t = new A();
+        //System.out.println(t.x);  //produces error because access of x is private
+        System.out.println(t.getX());
+    }
+}
